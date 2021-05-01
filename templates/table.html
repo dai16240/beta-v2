@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>beta-v2</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+<body>
+
+    <table class="u-full-width">
+      <thead>
+        <tr>
+        {% for h in t_headers %}
+          <th>{{h}}</th>
+        {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+      	{% for g in games %}
+        <tr>
+          <td>
+          	<img width="15" height="9" src="{{g['flag']}}" alt="{{g['trnmnt']}}">
+          </td>
+          <td>{{g['time']}}</td>
+          <td>{{g['gid']}}</td>
+          <td>{{g['home']}} - {{g['away']}}</td>
+          <td>{{g['one']}}</td>
+          <td>{{g['chi']}}</td>
+          <td>{{g['two']}}</td>
+          <td>{{g['prediction']}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+</body>
+</html>

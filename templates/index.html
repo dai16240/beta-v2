@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>beta-v2</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <style type="text/css">
+    	body {
+    		margin: 3rem;
+    		padding: 3rem;
+    	}
+    	#logo {
+    		margin-bottom: 1rem;
+    	}
+    </style>
+</head>
+<body>
+
+	<div>
+		<img id="logo" height="150" width="150" src="{{url_for('static', filename='icon.png')}}">
+		<h1>beta v2 api</h1>
+		<h3>Go to <a href="{{url_for('get_predictions')}}">/predictions</a></h3>
+		<h6>to get daily predictions in JSON format.</h6>
+		<h3>Go to <a href="{{url_for('table')}}">/table</a></h3>
+		<h6>to view predictions in tabular format.</h6>
+	</div>
+
+</body>
+</html>
